@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <title>Shopping Cart Lab JT</title>
+        
+        <script src="TSC.js" async></script> <!--put script in header, so it loads first to prevent problems?-->
+    </head>    
+
+    <body style="background-color:#111111; color: lightgray;">
+        <div class="indentElement">
+            
+        <h2 class="header">Tommy Shopping Cart Index</h2>
+
+        <ul>
+            <li>Apple $1.50 <button onclick="addToCart(0)"> Add to cart</button></li>
+            <li>Banana $1.25 <button onclick="addToCart(1)"> Add to cart</button></li>
+            <li>Cookie $0.99 <button onclick="addToCart(2)"> Add to cart</button></li>
+            <li>Dark Chocolate $2.00 <button onclick="addToCart(3)"> Add to cart</button></li>
+            <li>Egg $0.25 <button onclick="addToCart(4)"> Add to cart</button></li>
+            <li>Flan $2.50 <button onclick="addToCart(5)"> Add to cart</button></li>
+        </ul>
+
+        <button onclick="checkOut()">Check Out</button> <!--when linking button to a method, add 'onclick' listener, so when buton is pressed it will activate the functions. -->
+
+        <div id="SubTotal"> </div>
+
+        <!--use id instead of class. Class meant to be reusable throughout a page, id only meant to be used once. -->
+        <p id="Total"> <!--assign name/id to p tag, so it can be referenced to.-->
+            Total: $0.00
+        </p>
+
+
+
+    </body>
+
+</html>
